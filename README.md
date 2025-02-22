@@ -17,8 +17,7 @@ DTRWebAPI
 │   ├── Features
 ️️️│       ├️─️ Employees
 ️️️│          ├️─️ Commands  # Commands for modifying data
-️️️│          ├️─️ Queries   # Queries for retrieving data
-️️️│          └️─️ Handlers  # MediatR Handlers for commands & queries
+️️️│          └️─️ Queries   # Queries for retrieving data
 │
 │── Infrastructure  # Data Access Layer
 │   ├── Data        # AppDbContext (EF Core)
