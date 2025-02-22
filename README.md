@@ -15,6 +15,8 @@ DTRWebAPI
 │   ├── Commands    # Commands for modifying data
 │   ├── Queries     # Queries for retrieving data
 │   ├── Handlers    # MediatR Handlers for commands & queries
+│   ├── DTOs        # Data Transfer Objects (DTOs)
+│   ├── Mappers     # Mapping logic between DTOs and Entities
 │
 │── Infrastructure  # Data Access Layer
 │   ├── Data        # AppDbContext (EF Core)
