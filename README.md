@@ -45,7 +45,7 @@ DTRWebAPI
 ## 🏗 Setup & Installation  
 1️⃣ Clone this repository:  
 ```sh
-git clone https://github.com/yourusername/DTRWebAPI.git
+git clone [https://github.com/yourusername/DTRWebAPI.git](https://github.com/SeeFlushFlush64/DTRWebAPICleanArchitecture.git)
 ```
 2️⃣ Navigate to the project directory:  
 ```sh
@@ -71,6 +71,8 @@ dotnet run
 ✅ **Dependency Injection**  
 ✅ **Repository & Unit of Work Pattern**  
 ✅ **Migrations using EF Core**  
+✅ **Data Transfer Objects (DTOs)**
+✅ **AutoMapper for DTO Mapping**
 
 ## 📖 API Endpoints  
 | Method | Endpoint | Description |
