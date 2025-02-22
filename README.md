@@ -45,7 +45,7 @@ DTRWebAPI
 ## 🏗 Setup & Installation  
 1️⃣ Clone this repository:  
 ```sh
-git clone [https://github.com/yourusername/DTRWebAPI.git](https://github.com/SeeFlushFlush64/DTRWebAPICleanArchitecture.git)
+git clone https://github.com/SeeFlushFlush64/DTRWebAPICleanArchitecture.git
 ```
 2️⃣ Navigate to the project directory:  
 ```sh
