@@ -12,11 +12,13 @@ DTRWebAPI
 │   ├── Interfaces  # Repository Interfaces
 │
 │── Application     # Business Use Cases (CQRS)
-│   ├── Commands    # Commands for modifying data
-│   ├── Queries     # Queries for retrieving data
-│   ├── Handlers    # MediatR Handlers for commands & queries
 │   ├── DTOs        # Data Transfer Objects (DTOs)
 │   ├── Mappers     # Mapping logic between DTOs and Entities
+│   ├── Features
+️️️│       ├️─️ Employees
+️️️│          ├️─️ Commands  # Commands for modifying data
+️️️│          ├️─️ Queries   # Queries for retrieving data
+️️️│          └️─️ Handlers  # MediatR Handlers for commands & queries
 │
 │── Infrastructure  # Data Access Layer
 │   ├── Data        # AppDbContext (EF Core)
