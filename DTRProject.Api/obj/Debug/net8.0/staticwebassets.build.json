@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "0Y3WDvwITMmP7VV3kw/Ik75qbJL9r+4mnFFVjRX/05c=",
+  "Source": "DTRProject.Api",
+  "BasePath": "_content/DTRProject.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

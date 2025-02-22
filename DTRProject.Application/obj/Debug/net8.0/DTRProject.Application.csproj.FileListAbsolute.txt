@@ -1,0 +1,16 @@
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\bin\Debug\net8.0\DTRProject.Application.deps.json
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\bin\Debug\net8.0\DTRProject.Application.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\bin\Debug\net8.0\DTRProject.Application.pdb
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\bin\Debug\net8.0\DTRProject.Domain.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\bin\Debug\net8.0\DTRProject.Domain.pdb
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.csproj.AssemblyReference.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.AssemblyInfo.cs
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProje.0736627F.Up2Date
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\refint\DTRProject.Application.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.pdb
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\ref\DTRProject.Application.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Application\obj\Debug\net8.0\DTRProject.Application.sourcelink.json

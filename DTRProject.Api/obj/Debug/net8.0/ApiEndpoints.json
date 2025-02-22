@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "DTRProject.Api.Controllers.EmployeesController",
+    "Method": "CreateEmployeeAsync",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeDTO",
+        "Type": "DTRProject.Application.DTOs.Request.CreateEmployeeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.Api.Controllers.EmployeesController",
+    "Method": "GetEmployeesAsync",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.Api.Controllers.EmployeesController",
+    "Method": "GetEmployeeByIdAsync",
+    "RelativePath": "api/Employees/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.Api.Controllers.EmployeesController",
+    "Method": "UpdateEmployeeAsync",
+    "RelativePath": "api/Employees/{employeeId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "employeeDTO",
+        "Type": "DTRProject.Application.DTOs.Request.UpdateEmployeeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.Api.Controllers.EmployeesController",
+    "Method": "DeleteEmployeeAsync",
+    "RelativePath": "api/Employees/{employeeId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,13 @@
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\bin\Debug\net8.0\DTRProject.Domain.deps.json
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\bin\Debug\net8.0\DTRProject.Domain.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\bin\Debug\net8.0\DTRProject.Domain.pdb
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.csproj.AssemblyReference.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.AssemblyInfo.cs
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\refint\DTRProject.Domain.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.pdb
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\ref\DTRProject.Domain.dll
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Domain\obj\Debug\net8.0\DTRProject.Domain.sourcelink.json
