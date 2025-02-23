@@ -12,8 +12,8 @@ namespace DTRProject.Domain.Interfaces
         Task<IEnumerable<Employee>> GetAllAsync();
         Task<Employee?> GetByIdAsync(Guid id);
         Task<Employee> AddAsync(Employee employee);
-        Task AssignEmployeeToTimeLogs(Guid employeeId);
+
         Task<Employee?> UpdateAsync(Employee employee);
-        Task<bool> DeleteAsync(Guid id);
+        Task<bool> DeleteAsync(Employee employee);
     }
 }

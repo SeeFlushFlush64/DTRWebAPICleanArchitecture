@@ -37,17 +37,6 @@ namespace DTRProject.Application.Mappers
                 DateHired = philippineTime  // Set current date
             };
         }
-        public static Employee ToEmployeeFromUpdate(this UpdateEmployeeRequest updateDTO, Employee existingEmployee)
-        {
-            return new Employee
-            {
-                EmployeeId = existingEmployee.EmployeeId, // Keep original ID
-                FirstName = updateDTO.FirstName,
-                LastName = updateDTO.LastName,
-                Position = updateDTO.Position,
-                DateHired = existingEmployee.DateHired // Keep original date hired
-            };
-        }
 
         public static void UpdateEmployeeFromDTO(this Employee existingEmployee, UpdateEmployeeRequest updateDTO)
         {

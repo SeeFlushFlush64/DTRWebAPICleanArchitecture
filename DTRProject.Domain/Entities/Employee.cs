@@ -15,5 +15,8 @@ namespace DTRProject.Domain.Entities
         public string Position { get; set; } = null!;
         public DateTime DateHired { get; set; }
         public bool IsDeleted { get; set; } = false; // Soft delete flag
+        
+        // Navigation property for related TimeLogs
+        public ICollection<TimeLog> TimeLogs { get; set; } = new List<TimeLog>();
     }
 }

@@ -13,7 +13,11 @@ namespace DTRProject.Application.Features.Employees.Commands.DeleteEmployee
     {
         public async Task<bool> Handle(DeleteEmployeeCommand request, CancellationToken cancellationToken)
         {
-            return await employeeRepository.DeleteAsync(request.EmployeeId);
+            var employee = await employeeRepository.GetByIdAsync(request.EmployeeId);
+            if (employee is null) return false;
+
+            return await employeeRepository.DeleteAsync(employee);
+
         }
     }
 }

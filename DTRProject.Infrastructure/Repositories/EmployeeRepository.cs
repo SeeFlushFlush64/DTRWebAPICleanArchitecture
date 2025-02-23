@@ -23,7 +23,9 @@ namespace DTRProject.Infrastructure.Repositories
 
         public async Task<Employee?> GetByIdAsync(Guid id)
         {
-            return await _context.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            return await _context.Employees
+                                 .Include(e => e.TimeLogs)
+                                 .FirstOrDefaultAsync(e => e.EmployeeId == id);
         }
 
         public async Task<Employee> AddAsync(Employee employee)
@@ -35,38 +37,17 @@ namespace DTRProject.Infrastructure.Repositories
 
         public async Task<Employee?> UpdateAsync(Employee employee)
         {
-            _context.Employees.Update(employee);
             await _context.SaveChangesAsync();
             return employee;
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Employee employee)
         {
-            var employee = await _context.Employees
-                .FirstOrDefaultAsync(e => e.EmployeeId == id);
-
-            if (employee is null)
-            {
-                return false;
-            }
-
             employee.IsDeleted = true; // Soft delete
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task AssignEmployeeToTimeLogs(Guid employeeId)
-        {
-            var timeLogs = await _context.TimeLogs
-                .Where(t => t.EmployeeId == Guid.Parse("00000000-0000-0000-0000-000000000004")) // Placeholder EmployeeId
-                .ToListAsync();
-
-            foreach (var log in timeLogs)
-            {
-                log.EmployeeId = employeeId;
-            }
-
-            await _context.SaveChangesAsync();
-        }
+     
     }
 }

@@ -13,6 +13,15 @@ namespace DTRProject.Application.Features.Employees.Commands.CreateEmployee
             // Map DTO to Entity
             var employeeEntity = request.EmployeeDTO.ToEmployeeFromCreate();
 
+            // Ensure default time logs are assigned (if required)
+            if (employeeEntity.TimeLogs is null)
+            {
+                employeeEntity.TimeLogs = new List<TimeLog>
+                {
+                    new TimeLog { ClockInTime = DateTime.UtcNow, EmployeeId = employeeEntity.EmployeeId }
+                };
+            }
+
             // Call the repository, which now also assigns TimeLogs
             var createdEmployee = await employeeRepository.AddAsync(employeeEntity);
 
