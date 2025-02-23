@@ -1,5 +1,6 @@
 ﻿using DTRProject.Domain.Interfaces;
 using MediatR;
+using System;
 
 namespace DTRProject.Application.Features.TimeLogs.Commands.ClockOut
 {
@@ -15,10 +16,10 @@ namespace DTRProject.Application.Features.TimeLogs.Commands.ClockOut
         public async Task<bool> Handle(ClockOutCommand request, CancellationToken cancellationToken)
         {
             var latestLog = await _timeLogRepository.GetLatestLogAsync(request.EmployeeId);
-            if (latestLog == null || latestLog.ClockOutTime != null)
+            if (latestLog == null || latestLog.ClockOutTime.HasValue)
                 return false; // Prevent invalid clock-out
-
-            latestLog.ClockOutTime = DateTime.UtcNow;
+            var philippineTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Manila");
+            latestLog.ClockOutTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, philippineTimeZone);
             await _timeLogRepository.SaveChangesAsync();
             return true;
         }

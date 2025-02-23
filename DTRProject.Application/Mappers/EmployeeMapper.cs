@@ -11,6 +11,7 @@ namespace DTRProject.Application.Mappers
 {
     public static class EmployeeMapper
     {
+
         public static EmployeeDTO ToEmployeeDTO(this Employee employee)
         {
             return new EmployeeDTO
@@ -25,13 +26,15 @@ namespace DTRProject.Application.Mappers
 
         public static Employee ToEmployeeFromCreate(this CreateEmployeeRequest createDTO)
         {
+            var philippineTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Manila");
+            var philippineTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, philippineTimeZone);
             return new Employee
             {
                 EmployeeId = Guid.NewGuid(), // Generate new Guid
                 FirstName = createDTO.FirstName,
                 LastName = createDTO.LastName,
                 Position = createDTO.Position,
-                DateHired = DateTime.UtcNow  // Set current date
+                DateHired = philippineTime  // Set current date
             };
         }
         public static Employee ToEmployeeFromUpdate(this UpdateEmployeeRequest updateDTO, Employee existingEmployee)

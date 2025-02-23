@@ -13,6 +13,7 @@ namespace DTRProject.Domain.Entities
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string Position { get; set; } = null!;
-        public DateTime DateHired { get; set; } 
+        public DateTime DateHired { get; set; }
+        public bool IsDeleted { get; set; } = false; // Soft delete flag
     }
 }

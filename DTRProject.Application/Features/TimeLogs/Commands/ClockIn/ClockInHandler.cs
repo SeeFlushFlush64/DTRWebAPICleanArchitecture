@@ -19,13 +19,17 @@ namespace DTRProject.Application.Features.TimeLogs.Commands.ClockIn
             if (latestLog != null && latestLog.ClockOutTime == null)
                 return false; // Prevent multiple clock-ins
 
+
+            var philippineTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Manila");
+            var philippineTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, philippineTimeZone);
+
             var newLog = new TimeLog
             {
                 TimeLogId = Guid.NewGuid(),
                 EmployeeId = request.EmployeeId,
-                Date = DateTime.UtcNow.Date,
-                ClockInTime = DateTime.UtcNow
+                ClockInTime = philippineTime // Store full date-time
             };
+
 
             await _timeLogRepository.AddTimeLogAsync(newLog);
             await _timeLogRepository.SaveChangesAsync();

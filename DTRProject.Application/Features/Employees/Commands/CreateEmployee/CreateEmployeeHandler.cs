@@ -13,7 +13,7 @@ namespace DTRProject.Application.Features.Employees.Commands.CreateEmployee
             // Map DTO to Entity
             var employeeEntity = request.EmployeeDTO.ToEmployeeFromCreate();
 
-            // Call the repository (which expects a domain entity)
+            // Call the repository, which now also assigns TimeLogs
             var createdEmployee = await employeeRepository.AddAsync(employeeEntity);
 
             // Map back to DTO before returning response

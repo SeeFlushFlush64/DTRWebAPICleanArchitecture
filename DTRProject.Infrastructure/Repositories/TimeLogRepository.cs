@@ -12,30 +12,44 @@ namespace DTRProject.Infrastructure.Repositories
     public class TimeLogRepository : ITimeLogRepository
     {
         private readonly AppDbContext _context;
+        private static readonly Guid UnassignedEmployeeId = Guid.Parse("00000000-0000-0000-0000-000000000001");
 
         public TimeLogRepository(AppDbContext context)
         {
             _context = context;
         }
 
+        public async Task AssignUnassignedLogsAsync(Guid employeeId)
+        {
+            var unassignedLogs = await _context.TimeLogs
+                .Where(t => t.EmployeeId == UnassignedEmployeeId)
+                .ToListAsync();
+
+            if (unassignedLogs.Any())
+            {
+                foreach (var log in unassignedLogs)
+                {
+                    log.EmployeeId = employeeId;
+                }
+                await _context.SaveChangesAsync();
+            }
+        }
+
         public async Task AddTimeLogAsync(TimeLog timeLog)
         {
-            // Ensure the time is stored in UTC
-            timeLog.ClockInTime = timeLog.ClockInTime.ToUniversalTime();
-            if (timeLog.ClockOutTime.HasValue)
+            if (timeLog.EmployeeId == Guid.Empty) // If no EmployeeId is provided
             {
-                timeLog.ClockOutTime = timeLog.ClockOutTime.Value.ToUniversalTime();
+                timeLog.EmployeeId = Guid.Parse("00000000-0000-0000-0000-000000000001"); // Assign to placeholder
             }
-
             await _context.TimeLogs.AddAsync(timeLog);
         }
+
 
         public async Task<TimeLog?> GetLatestLogAsync(Guid employeeId)
         {
             return await _context.TimeLogs
                 .Where(t => t.EmployeeId == employeeId)
-                .OrderByDescending(t => t.ClockInTime) // Use ClockInTime for precision
-                .AsNoTracking() // Optimization for read-only query
+                .OrderByDescending(t => t.ClockInTime) // Sort directly by ClockInTime
                 .FirstOrDefaultAsync();
         }
 
@@ -43,7 +57,7 @@ namespace DTRProject.Infrastructure.Repositories
         {
             return await _context.TimeLogs
                 .Where(t => t.EmployeeId == employeeId)
-                .OrderByDescending(t => t.ClockInTime) // Ensure logs are sorted correctly
+                .OrderByDescending(t => t.ClockInTime)
                 .AsNoTracking()
                 .ToListAsync();
         }

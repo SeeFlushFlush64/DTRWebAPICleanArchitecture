@@ -97,7 +97,7 @@
   {
     "ContainingType": "DTRProject.API.Controllers.TimeLogController",
     "Method": "ClockIn",
-    "RelativePath": "api/TimeLog/clock-in/{employeeId}",
+    "RelativePath": "api/TimeLog/ClockIn/{employeeId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -113,7 +113,7 @@
   {
     "ContainingType": "DTRProject.API.Controllers.TimeLogController",
     "Method": "ClockOut",
-    "RelativePath": "api/TimeLog/clock-out/{employeeId}",
+    "RelativePath": "api/TimeLog/ClockOut/{employeeId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

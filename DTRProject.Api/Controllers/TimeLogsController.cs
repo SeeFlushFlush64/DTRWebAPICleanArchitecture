@@ -10,7 +10,7 @@ namespace DTRProject.API.Controllers
     [ApiController]
     public class TimeLogController(ISender sender) : ControllerBase
     {
-        [HttpPost("clock-in/{employeeId}")]
+        [HttpPost("ClockIn/{employeeId}")]
         public async Task<IActionResult> ClockIn(Guid employeeId)
         {
             var success = await sender.Send(new ClockInCommand(employeeId));
@@ -18,7 +18,7 @@ namespace DTRProject.API.Controllers
             return Ok("Clock-in successful.");
         }
 
-        [HttpPost("clock-out/{employeeId}")]
+        [HttpPost("ClockOut/{employeeId}")]
         public async Task<IActionResult> ClockOut(Guid employeeId)
         {
             var success = await sender.Send(new ClockOutCommand(employeeId));
