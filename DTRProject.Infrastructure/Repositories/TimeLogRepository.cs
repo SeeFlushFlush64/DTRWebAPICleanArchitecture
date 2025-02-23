@@ -40,6 +40,7 @@ namespace DTRProject.Infrastructure.Repositories
         {
             return await _context.TimeLogs
                 .Where(t => t.EmployeeId == employeeId)
+                .Include(t => t.Employee) // Explicitly include Employee
                 .OrderByDescending(t => t.ClockInTime)
                 .AsNoTracking()
                 .ToListAsync();
