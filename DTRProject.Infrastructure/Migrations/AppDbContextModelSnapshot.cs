@@ -47,6 +47,29 @@ namespace DTRProject.Infrastructure.Migrations
 
                     b.ToTable("Employees");
                 });
+
+            modelBuilder.Entity("DTRProject.Domain.Entities.TimeLog", b =>
+                {
+                    b.Property<Guid>("TimeLogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ClockInTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ClockOutTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("EmployeeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("TimeLogId");
+
+                    b.ToTable("TimeLogs");
+                });
 #pragma warning restore 612, 618
         }
     }

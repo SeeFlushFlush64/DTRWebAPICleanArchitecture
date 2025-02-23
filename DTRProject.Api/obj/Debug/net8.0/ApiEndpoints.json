@@ -77,5 +77,53 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.API.Controllers.TimeLogController",
+    "Method": "GetLogs",
+    "RelativePath": "api/TimeLog/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.API.Controllers.TimeLogController",
+    "Method": "ClockIn",
+    "RelativePath": "api/TimeLog/clock-in/{employeeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DTRProject.API.Controllers.TimeLogController",
+    "Method": "ClockOut",
+    "RelativePath": "api/TimeLog/clock-out/{employeeId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

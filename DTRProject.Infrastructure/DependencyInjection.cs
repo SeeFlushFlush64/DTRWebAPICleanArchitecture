@@ -23,6 +23,7 @@ namespace DTRProject.Infrastructure
                 }
             );
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<ITimeLogRepository, TimeLogRepository>();
             return services;
         }
     }

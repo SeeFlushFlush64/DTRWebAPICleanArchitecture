@@ -10,5 +10,6 @@ namespace DTRProject.Infrastructure.Data
             
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<TimeLog> TimeLogs { get; set; }
     }
 }

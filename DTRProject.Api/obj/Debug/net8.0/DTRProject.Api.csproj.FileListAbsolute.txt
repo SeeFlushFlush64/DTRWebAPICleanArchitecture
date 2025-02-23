@@ -155,3 +155,4 @@ C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Api\obj\Debug\
 C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Api\bin\Debug\net8.0\MediatR.dll
 C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Api\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Api\obj\Debug\net8.0\DTRProject.Api.sourcelink.json
+C:\Users\micha\source\repos\DTRWebAPICleanArchitecture\DTRProject.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
