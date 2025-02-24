@@ -1,4 +1,4 @@
-or# 📌 DTR Web API (Clean Architecture)  
+# 📌 DTR Web API (Clean Architecture)  
 
 🚀 A **.NET Web API** project implementing **Clean Architecture** with **CQRS, MediatR, and EF Core**.  
 
