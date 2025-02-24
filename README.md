@@ -6,7 +6,7 @@
 This project follows a **4-layered Clean Architecture**:  
 
 ```
-DTRWebAPI
+DTRProject
 │── Domain          # Core Business Logic
 │   ├── Entities    # Employee Entity
 │   ├── Interfaces  # Repository Interfaces
@@ -52,7 +52,7 @@ git clone https://github.com/SeeFlushFlush64/DTRWebAPICleanArchitecture.git
 ```
 2️⃣ Navigate to the project directory:  
 ```sh
-cd DTRWebAPI
+cd DTRProject
 ```
 3️⃣ Install dependencies:  
 ```sh
