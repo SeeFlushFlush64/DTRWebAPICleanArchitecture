@@ -23,9 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Employees\Queries\GetEmployeeById\" />
     <Folder Include="Features\Employees\Queries\GetEmployees\" />
-    <Folder Include="Features\Employees\Queries\" />
     <Folder Include="Features\TimeLogs\Commands\" />
     <Folder Include="Features\TimeLogs\Queries\" />
   </ItemGroup>
