@@ -1,12 +1,8 @@
 ﻿using DTRProject.Application.Features.Employees.Queries.GetEmployeeById;
 using DTRProject.Domain.Entities;
 using DTRProject.Domain.Interfaces;
-using Moq;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Xunit;
 using FluentAssertions;
+using Moq;
 
 namespace DTRProject.Application.Tests.Features.Employees.Queries.GetEmployeeById
 {

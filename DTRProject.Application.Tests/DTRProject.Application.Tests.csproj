@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Employees\Queries\GetEmployees\" />
     <Folder Include="Features\TimeLogs\Commands\" />
     <Folder Include="Features\TimeLogs\Queries\" />
   </ItemGroup>
