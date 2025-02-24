@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Features\Employees\Commands\DeleteEmployee\" />
-    <Folder Include="Features\Employees\Commands\UpdateEmployee\" />
     <Folder Include="Features\Employees\Queries\GetEmployeeById\" />
     <Folder Include="Features\Employees\Queries\GetEmployees\" />
     <Folder Include="Features\Employees\Queries\" />
