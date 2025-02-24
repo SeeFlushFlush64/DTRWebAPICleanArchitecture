@@ -5,10 +5,6 @@ using DTRProject.Domain.Entities;
 using DTRProject.Domain.Interfaces;
 using FluentAssertions;
 using Moq;
-using Xunit;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace DTRProject.Application.Tests.Features.Employees.Commands.CreateEmployee
 {

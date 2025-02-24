@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Employees\Commands\DeleteEmployee\" />
     <Folder Include="Features\Employees\Queries\GetEmployeeById\" />
     <Folder Include="Features\Employees\Queries\GetEmployees\" />
     <Folder Include="Features\Employees\Queries\" />
