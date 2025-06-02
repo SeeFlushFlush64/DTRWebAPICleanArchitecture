@@ -72,10 +72,10 @@ dotnet run
 ✅ **CQRS with MediatR**  
 ✅ **Entity Framework Core (Code First)**  
 ✅ **Dependency Injection**  
-✅ **Repository & Unit of Work Pattern**  
+✅ **Repository Pattern**  
 ✅ **Migrations using EF Core**  
 ✅ **Data Transfer Objects (DTOs)**
-✅ **AutoMapper for DTO Mapping**
+✅ **Mapper for DTO Mapping**
 
 ## 📖 API Endpoints  
 | Method | Endpoint | Description |
@@ -87,7 +87,6 @@ dotnet run
 | `DELETE` | `/api/employees/{id}` | Delete an employee |
 
 ## 🎯 Future Improvements  
-- 🔹 **Unit Tests with xUnit**  
 - 🔹 **FluentValidation for Request Validation**  
 - 🔹 **JWT Authentication**  
 - 🔹 **Docker Support**  
