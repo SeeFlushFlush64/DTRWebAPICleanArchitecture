@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTRProject.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3ee85442af7bdd1d8d5dcc29b7080de88073a30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a85443bf76928d61a00b102a1d7c26b5ca5d01a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTRProject.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTRProject.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

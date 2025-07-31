@@ -15,6 +15,7 @@ namespace DTRProject.Infrastructure
     {
         public static IServiceCollection AddInfrastructureDI(this IServiceCollection services)
         {
+
             services.AddDbContext<AppDbContext>
             (
                 options =>
@@ -22,6 +23,7 @@ namespace DTRProject.Infrastructure
                     options.UseSqlServer("Server=MICHAELRHEY\\SQLEXPRESS;Database=DTRDb;TrustServerCertificate=true;Trusted_connection=true;");
                 }
             );
+
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<ITimeLogRepository, TimeLogRepository>();
             return services;
