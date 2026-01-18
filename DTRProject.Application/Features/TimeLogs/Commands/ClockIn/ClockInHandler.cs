@@ -4,6 +4,9 @@ using MediatR;
 
 namespace DTRProject.Application.Features.TimeLogs.Commands.ClockIn
 {
+    /// <summary>
+    /// Handle the clock-in operation for employees.
+    /// </summary>
     public class ClockInHandler : IRequestHandler<ClockInCommand, bool>
     {
         private readonly ITimeLogRepository _timeLogRepository;
@@ -13,6 +16,13 @@ namespace DTRProject.Application.Features.TimeLogs.Commands.ClockIn
             _timeLogRepository = timeLogRepository;
         }
 
+
+        /// <summary>
+        /// Processes the clock-in command and creates a new time log entry.
+        /// </summary>
+        /// <param name="request">The clock-in command containing employee ID.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>True if clock-in was successful; false if employee already has an active clock-in.</returns>
         public async Task<bool> Handle(ClockInCommand request, CancellationToken cancellationToken)
         {
             var latestLog = await _timeLogRepository.GetLatestLogAsync(request.EmployeeId);
