@@ -6,11 +6,24 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DTRProject.API.Controllers
 {
+    /// <summary>
+    /// Manages employee time tracking operations including clock-in and clock-out.
+    /// </summary>
+    /// <param name="sender"></param>
     [Route("api/[controller]")]
     [ApiController]
     public class TimeLogController(ISender sender) : ControllerBase
     {
+        /// <summary>
+        /// Records an employee's clock-in time.
+        /// </summary>
+        /// <param name="employeeId">The unique identifier of the employee clocking in.</param>
+        /// <returns>Success message if clock-in is recorded.</returns>
+        /// <response code="200">Clock-in successfully recorded.</response>
+        /// <response code="400">Employee must clock out before clocking in again.</response>
         [HttpPost("ClockIn/{employeeId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> ClockIn(Guid employeeId)
         {
             var success = await sender.Send(new ClockInCommand(employeeId));
@@ -18,6 +31,9 @@ namespace DTRProject.API.Controllers
             return Ok("Clock-in successful.");
         }
 
+
+
+        
         [HttpPost("ClockOut/{employeeId}")]
         public async Task<IActionResult> ClockOut(Guid employeeId)
         {
