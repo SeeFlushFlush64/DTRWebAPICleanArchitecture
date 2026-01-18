@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTRProject.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2d14f31d57a569d23342ab0fa30f9ad3ad3465")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebe6fa7c2a01307ec87a85ad0fb584514c77a33f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTRProject.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTRProject.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
