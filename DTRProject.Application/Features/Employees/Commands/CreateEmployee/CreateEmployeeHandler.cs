@@ -6,8 +6,19 @@ using MediatR;
 
 namespace DTRProject.Application.Features.Employees.Commands.CreateEmployee
 {
+
+    /// <summary>
+    /// Handles the creation of a new employee record.
+    /// </summary>
+    /// <param name="employeeRepository"></param>
     public class CreateEmployeeHandler(IEmployeeRepository employeeRepository) : IRequestHandler<CreateEmployeeCommand, EmployeeDTO>
     {
+        /// <summary>
+        /// Processes the employee creation command and persists the new employee.
+        /// </summary>
+        /// <param name="request">The create employee command.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns>The created employee data transfer object.</returns>
         public async Task<EmployeeDTO> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
         {
             // Map DTO to Entity
